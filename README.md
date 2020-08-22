@@ -1,8 +1,6 @@
 # STYX-stakepool
 
-Ticker symbol :  STYX
-
-Delegate to our pool from Yoroi or Daedalus
+## Pool Info :
 
 <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
