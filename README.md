@@ -1,0 +1,2 @@
+# styx
+STYX stakepool
