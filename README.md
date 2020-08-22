@@ -1,10 +1,11 @@
-# styx
-## STYX-stakepool
+# STYX-stakepool
 
 Ticker symbol :  STYX
-delegate to our pool from Yoroi or Daedalus
+
+Delegate to our pool from Yoroi or Daedalus
 
 ## Why the name STYX ?
+
 In Greek mythology STYX is the name of the River or Swamp that forms the boundary between Earth and the Underworld.
 Several names out of the cardano ecosystem are derived from ancient Greek mythology :
 
