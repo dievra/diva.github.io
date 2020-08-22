@@ -4,6 +4,34 @@ Ticker symbol :  STYX
 
 Delegate to our pool from Yoroi or Daedalus
 
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$.getJSON('https://js.adapools.org/pools/d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43/summary.json', function(data) { 
+$.each( data.data, function( i, val ) { 
+		a=new Array('tax_fix','pledge','total_stake');
+		if(parseInt(val) > 100000) val=Math.round(parseInt(val)/1000000);
+		if(i=='blocks_lifetime') val=parseInt(val) + parseInt(data.data.blocks_epoch);
+
+		$('#d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_'+i).html(val).text();   
+}); 
+		});
+</script>
+
+Pool ID: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_pool_id"></span><br>
+		Ticker: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_db_ticker"></span><br>
+		Name: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_db_name"></span><br>
+		Description: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_db_description"></span><br>
+		Total Stake: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_total_stake"></span><br>
+		Last Reward Epoch: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_rewards_epoch"></span><br>
+		Tax Ratio: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_tax_ratio"></span><br>
+		Tax Fix: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_tax_fix"></span><br>
+		ROA: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_roa">%</span><br>
+		Blocks Lifetime: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_blocks_lifetime"></span><br>
+		Blocks in epoch: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_blocks_epoch"></span><br>
+		Pledge: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_pledge"></span><br>
+		Rank: <span id="d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43_rank"></span><br>
+		More info on <a href="https://adapools.org/pool/d1f84ed69e422531edc277f027f2d8d66d0ad4daa0348496a69c4a43">ADApools.org</a>.
+
 ## Mission : 
 
 * security : We set up our pools with all the necessary security measures.
