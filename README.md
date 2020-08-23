@@ -50,6 +50,6 @@ We thought it would be cool to continue that tradition. That's how we came up wi
 
 
 Check out other names that are commonly used in the cardano eco-system
-(https://cardanowiki.info/wiki/Cardano_Names)
+[https://cardanowiki.info/wiki/Cardano_Names]
 
 
